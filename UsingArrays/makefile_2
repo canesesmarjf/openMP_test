@@ -1,0 +1,8 @@
+COMPILER = gfortran
+OPTFLAGS = -O3
+
+all: prog_2.f90
+	$(COMPILER) $(OPTFLAGS) -fopenmp prog_2.f90 -o prog_2
+
+clean:
+	rm prog_2

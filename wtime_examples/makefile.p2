@@ -1,0 +1,8 @@
+COMPILER = gfortran
+OPTFLAGS = -O3
+
+all: compute_pi.f90
+	$(COMPILER) $(OPTFLAGS) -fopenmp compute_pi.f90 -o compute_pi
+
+clean:
+	rm compute_pi
